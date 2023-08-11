@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-int n;
+int n, digit;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 int last_digit = n % 10;
