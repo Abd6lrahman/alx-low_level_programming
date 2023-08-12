@@ -1,29 +1,25 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
-*
-* Description: This program prints all the numbers of base 16 in lowercase,
-*              followed by a new line, using only the putchar function.
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * Description: This program prints numbers of base16 in lowercase.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char digit = '0';
+int digit = 48; /* 48; decimal representation of 0 */
 
-while (digit <= '9')
+while (digit <= 102) /* 102; decimal representation of f */
 {
 putchar(digit);
+
+/* After 9 we jump till 96 */
+if (digit == 57)
+digit += 39;
+
 digit++;
-}
-
-char letter = 'a';
-
-while (letter <= 'f')
-{
-putchar(letter);
-letter++;
 }
 
 putchar('\n');
