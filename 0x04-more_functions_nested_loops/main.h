@@ -30,6 +30,7 @@ int mul(int a, int b);
  * print_numbers - Print numbers from 0 to 9.
  */
 void print_numbers(void);
+void print_most_numbers(void);
 
 #endif /* MAIN_H */
 
