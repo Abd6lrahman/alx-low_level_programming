@@ -6,5 +6,6 @@
 *int proypes (int)
 */
 void print_numbers(void);
+int _isupper(int c);
 
 #endif /* MAIN_H */
